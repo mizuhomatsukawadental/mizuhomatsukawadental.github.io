@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: 本番ドメイン確定後、各locを絶対URLへ更新してください。 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/index8.html</loc></url>
+  <url><loc>/about/</loc></url>
+  <url><loc>/treatment/</loc></url>
+  <url><loc>/doctor/</loc></url>
+  <url><loc>/environment/</loc></url>
+  <url><loc>/facility-standards/</loc></url>
+  <url><loc>/privacy/</loc></url>
+  <url><loc>/access/</loc></url>
+  <url><loc>/news/</loc></url>
+  <url><loc>/sitemap.html</loc></url>
+  <url><loc>/treatment/pediatric/</loc></url>
+  <url><loc>/treatment/prevention/</loc></url>
+  <url><loc>/treatment/cavity/</loc></url>
+  <url><loc>/treatment/periodontal/</loc></url>
+  <url><loc>/treatment/root-canal/</loc></url>
+  <url><loc>/treatment/dentures/</loc></url>
+  <url><loc>/treatment/visit/</loc></url>
+  <url><loc>/treatment/whitening/</loc></url>
+  <url><loc>/treatment/direct-bonding/</loc></url>
+  <url><loc>/treatment/ct-scanner/</loc></url>
+  <url><loc>/treatment/prosthetic/</loc></url>
+</urlset>

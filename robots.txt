@@ -1,0 +1,5 @@
+﻿User-agent: *
+Allow: /
+
+# TODO: 本番ドメイン確定後、Sitemapを絶対URLへ更新してください。
+Sitemap: /sitemap.xml

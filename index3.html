@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>〇〇歯科クリニック | 心地よいカフェのような歯医者さん</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #7D8471; /* セージグリーン */
+            --bg-color: #F9F7F2;      /* 生成り色（カフェ風） */
+            --text-color: #4A4A4A;    /* 柔らかいチャコール */
+            --accent-color: #D4A373;  /* 木目調のベージュ */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        h1, h2, .font-serif {
+            font-family: 'Noto Serif JP', serif;
+        }
+
+        /* --- ヘッダー・ナビゲーション --- */
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #E0DED8;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 400;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* --- ヒーローセクション --- */
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(249, 247, 242, 0.4), rgba(249, 247, 242, 0.4)), 
+                        url('https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&q=80&w=2000') no-repeat center/cover;
+            /* 樹木のイメージ背景 */
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.1em;
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            letter-spacing: 0.2em;
+        }
+
+        .rabbit-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            opacity: 0.7;
+        }
+
+        /* --- コンテンツエリア --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        section {
+            margin-bottom: 100px;
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+        }
+
+        h2::before {
+            content: '🌿';
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+
+        /* --- 診療内容リスト --- */
+        .menu-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-list li {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #F0EDE5;
+            transition: transform 0.3s;
+        }
+
+        .menu-list li:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        /* --- フォーム --- */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #E0DED8;
+            border-radius: 8px;
+            background-color: #FDFDFB;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: opacity 0.3s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        /* --- フッター --- */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #F0EDE5;
+            font-size: 0.8rem;
+        }
+
+        .footprints {
+            margin-bottom: 20px;
+            letter-spacing: 15px;
+            opacity: 0.3;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#about">医院紹介</a>
+        <a href="#service">診療内容</a>
+        <a href="#access">アクセス</a>
+        <a href="#contact">お問い合わせ</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div class="rabbit-icon">🐇</div>
+    <h1>〇〇歯科クリニック</h1>
+    <p>木漏れ日のような、心地よい時間を。</p>
+</div>
+
+<div class="container">
+    <section id="about">
+        <h2>医院紹介</h2>
+        <div class="card">
+            <p>当院では、まるでカフェに立ち寄るようなリラックスできる空間づくりを大切にしています。<br>
+            大きな樹木が風に揺れるような、穏やかな空気感の中で、小さなお子さまから大人の方まで安心して通える歯科医院を目指しています。</p>
+        </div>
+    </section>
+
+    <section id="service">
+        <h2>診療内容</h2>
+        <ul class="menu-list">
+            <li>むし歯治療</li>
+            <li>予防歯科</li>
+            <li>小児歯科</li>
+            <li>ホワイトニング</li>
+            <li>インプラント</li>
+        </ul>
+    </section>
+
+    <section id="access">
+        <h2>アクセス</h2>
+        <div class="card">
+            <p>〒000-0000 愛知県〇〇市〇〇町1-2-3<br>
+            <strong>TEL: 052-890-8241</strong></p>
+            <p>〇〇駅から徒歩5分（並木道を通ってお越しください）</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <div class="card">
+            <form>
+                <div class="form-group">
+                    <label>お名前</label>
+                    <input type="text" placeholder="例：山田 花子">
+                </div>
+                <div class="form-group">
+                    <label>メールアドレス</label>
+                    <input type="email" placeholder="example@mail.com">
+                </div>
+                <div class="form-group">
+                    <label>お問い合わせ内容</label>
+                    <textarea rows="4"></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit">メッセージを送る</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="footprints">🐾 🐾 🐾</div>
+    <p>© 2026 〇〇歯科クリニック</p>
+</footer>
+
+</body>
+</html>

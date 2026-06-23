@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>〇〇歯科クリニック</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+    background-color: #f6f9f4;
+    color: #333;
+}
+
+/* メインビジュアル（写真） */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url("rabbit.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2em;
+}
+
+/* ナビ */
+nav {
+    background: #dff0d8;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/* セクション */
+section {
+    padding: 40px 20px;
+}
+
+.box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #4caf50;
+}
+
+footer {
+    background: #81c784;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+button {
+    background: #66bb6a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+    <div>
+        <h1>〇〇歯科クリニック</h1>
+        <p>やさしく、安心できる歯科医院</p>
+    </div>
+</div>
+
+<nav>
+    <a href="#about">医院紹介</a>
+    <a href="#services">診療内容</a>
+    <a href="#access">アクセス</a>
+    <a href="#contact">お問い合わせ</a>
+</nav>
+
+<section id="about">
+    <div class="box">
+        <h2>🌿 医院紹介</h2>
+        <p>
+            緑に囲まれた落ち着いた空間で、リラックスして治療を受けていただけます。<br>
+            小さなお子さまも安心して通えるやさしい歯科医院です。
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <div class="box">
+        <h2>🦷 診療内容</h2>
+        <ul>
+            <li>むし歯治療</li>
+            <li>予防歯科</li>
+            <li>小児歯科</li>
+            <li>ホワイトニング</li>
+            <li>インプラント</li>
+        </ul>
+    </div>
+</section>
+
+<section id="access">
+    <div class="box">
+        <h2>📍 アクセス</h2>
+        <p>
+            〒000-0000<br>
+            愛知県〇〇市〇〇町1-2-3<br>
+            TEL: 052-890-8241
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="box">
+        <h2>📩 お問い合わせ</h2>
+        <form>
+            <input type="text" placeholder="お名前"><br><br>
+            <input type="email" placeholder="メール"><br><br>
+            <textarea rows="5" placeholder="お問い合わせ内容"></textarea><br><br>
+            <button>送信</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 〇〇歯科クリニック 🐰</p>
+</footer>
+
+</body>
+</html>
